@@ -1,0 +1,73 @@
+
+/*******************************
+*                              *
+*         RESPONSIVE CSS       *
+*                              *
+*******************************/
+
+@media only screen and (max-width: 767px) {
+    .display-desktop,
+    #heroNav{
+        display: none;
+    }
+
+    .display-mobile {
+        display: block;
+    }
+
+    .hero .info-top {
+        justify-content:center;
+    }
+
+    .hero .info-top a{
+        color: var(--color-green);
+    }
+
+    .hero .hero-box .hero-nav {
+      background-color: var(--color-black-transparent);
+      padding: 25px 0;
+      position: absolute;
+      width: 90%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      padding: 25px;
+      transition: all 0.5s;
+    }
+
+    .hero .hero-box .title{
+        margin-bottom: 80px;
+   
+    }
+
+    .hero .hero-box .hero-nav a{
+        display: block;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    #heroNav.active {
+        display: block !important;
+    }
+
+    #experience .img-left {
+          margin-left: 0px;
+    }
+
+    #experience .img-right {
+        margin-left: 0px;
+    }
+
+    #experience img {
+        margin-bottom: 50px;
+    }
+
+    #experience .row {
+        margin-bottom: 50px;
+      }
+      
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+      
+}
