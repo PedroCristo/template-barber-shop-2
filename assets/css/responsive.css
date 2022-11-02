@@ -4,8 +4,42 @@
 *         RESPONSIVE CSS       *
 *                              *
 *******************************/
+@media only screen and (max-width: 1000px) {
+    #work .container-xl {
+        max-width: 910px;
+        margin: 0 auto;
+    }
+
+    .active-link {
+        background-color: var(--color--dark-grey);
+        color: var(--color-white) !important;
+        padding: 4px 80px;
+    }
+
+    #footer .shedule-box p,
+    #footer .shedule-box a{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #work .container-xl {
+        max-width: 810px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #work .container-xl {
+        max-width: 710px;
+        margin: 0 auto;
+    }
+}
 
 @media only screen and (max-width: 767px) {
+    
+    p {
+      font-size: 0.8rem;
+    }
     .display-desktop,
     #heroNav{
         display: none;
@@ -67,7 +101,44 @@
       }
       
     .row-reverse {
-        flex-direction: row-reverse;
+            flex-direction: column-reverse;
     }
+
+    #experience .col-md-5 {
+        margin-top: 20px;
+        padding: 0 45px;
+      }
       
+      .container {
+        max-width: 750px;
+      }
+
+      #experience h4 {
+        font-size: 1rem;
+     
+    }
+
+    #work .container-xl {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #work .col-md-4 {
+        margin-top: 25px;
+
+    }
+
+    #about .about-text {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #about .col-md-12 img {
+        width: 100%;
+    }
+
+    #footer .btn {
+        margin: -15px 0 25px;
+    }
 }

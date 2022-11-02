@@ -3,6 +3,7 @@
 *        GOOGLE FONTS          *
 *                              *
 *******************************/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap');
 
 
 
@@ -16,13 +17,20 @@
     --color-white:rgb(248, 238, 238);
     --color-black-transparent:rgb(22,22,22,0.6);
     --color-green:rgb(46,184,99);
+    --color--dark-grey: rgb(80, 78, 78);
     --color--grey: rgb(158, 158, 158);
+    --color-yellow: rgb(240,173,78);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-grey {
+     color: var(--color--dark-grey) !important;
 }
 
 a {
@@ -35,6 +43,11 @@ a:hover {
     color: var(--color-white);
 }
 
+img {
+    width: 100%;
+}
+
+
 .title {
     color: var(--color-white);
     font-size: 2.2rem;
@@ -45,13 +58,14 @@ a:hover {
     text-align: center !important;
     color: var(--color--grey);
     margin: 50px 0 100px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
 }
 
 p {
     color: var(--color--grey);
     font-size: 1.1rem;
 }
-
 
 .overlay {
     position: absolute;
@@ -62,6 +76,10 @@ p {
     background: var(--color-black);
     opacity: 0.5;
     z-index: 10;
+}
+
+.button-box{
+    text-align: center;
 }
 
 .btn {
@@ -100,8 +118,34 @@ p {
     display: block !important;
 }
 
-img {
-    width: 100%;
+.fa-brands{
+    color: var(--color--grey);
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.fa-brands:hover{
+    color: var(--color-black);
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transform: scale(1.1);
+}
+
+.title-box {
+    position: relative;
+}
+
+.under-bar {
+    background-color: var(--color--grey);
+    width: 220px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 60px auto;
 }
 
 /*******************************
@@ -161,15 +205,22 @@ img {
 }
 
 .hero .hero-box .hero-nav a:hover {
-    transform: scale(9);
+    transform: scale(0.1) !important;
 }
 
 .hero .hero-box .btn{
     margin: 40px 0 40px 0;
- 
 }
 
-#experience {
+/*******************************
+*                              *
+*     EXPERIENCE SECTION       *
+*                              *
+*******************************/
+#experience,
+#reviews,
+#work,
+#about {
     background-color: var(--color-black);
     overflow: hidden;
     color: var(--color-white);
@@ -179,7 +230,7 @@ img {
   margin-bottom: 200px;
 }
 
-#experience .col-md-4 {
+#experience .col-md-5 {
   margin-top: 100px;
 }
 
@@ -193,6 +244,7 @@ img {
 
 #experience h4 {
     padding-bottom: 25px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -202,8 +254,174 @@ img {
 
 #experience .btn{
     margin-top: 50px;
+    padding: 15px 60px;
 }
 
-#experience .btn:hover{
-    transform: scale(1);
+/*******************************
+*                              *
+*       REVIEWS SECTION        *
+*                              *
+*******************************/
+#reviews .col-md-4 {
+    text-align: center;
 }
+
+#reviews .container {
+    margin-bottom: 100px;
+}
+
+#reviews .col-md-4 .review-sorce {
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: var(--color-white);
+}
+
+#reviews .col-md-4 span {
+      color: var(--color-yellow);
+}
+
+#reviews .rating-box {
+      margin-bottom: 100px;
+}
+
+#reviews .reviews-box {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 150px;
+}
+
+#reviews .reviews-box p {
+   margin: 0 auto;
+}
+
+#reviews .reviews-box img {
+   width: 30%;
+   margin: 15px 5px;
+   border-radius: 50%;
+   border: 1px solid var(--color-white);
+}
+
+#reviews .reviews-box .reviews-img,
+#reviews .reviews-box .reviews-right {
+    position: absolute;
+}
+
+#reviews .reviews-box .reviews-img {
+    left: 5px;
+}
+
+#reviews .reviews-box .reviews-right {
+    right: -80px;
+}
+#reviews .reviews-box .reviews-right img {
+    width: 25%;
+}
+
+/*******************************
+*                              *
+*         WORK SECTION         *
+*                              *
+*******************************/
+#work .container {
+    max-width: 1000px;
+}
+
+#work .container .col-md-4 {
+margin-bottom: 25px;
+}
+
+/*******************************
+*                              *
+*        ABOUT SECTION         *
+*                              *
+*******************************/
+#about .about-img{
+  margin-bottom: 150px;
+}
+
+#about .about-img-1 img {
+    width: 80%;
+}
+
+#about figcaption {
+    text-align: center;
+    padding: 25px;
+    font-size: 1.5rem;
+}
+
+#about .about-text {
+    text-align: center;
+}
+
+#about .about-text p{
+    margin-bottom: 50px;
+}
+
+#about .about-img img {
+    margin: 0 auto;
+    display: block;
+}
+
+#about .about-img-2 img {
+    width: 50%;
+}
+
+#about .col-md-12 img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+/*******************************
+*                              *
+*            FOOTER            *
+*                              *
+*******************************/
+#footer {
+    padding: 80px 15px 20px;
+    color: var(--color--grey);
+    text-align: center;
+}
+
+#footer .links-box a{
+    color: var(--color--grey);
+}
+
+#footer .shedule-box p{
+    font-size: 1.1rem;
+}
+
+#footer .shedule-box h2{
+    font-size: 1.1rem;
+    margin: 35px 0;
+}
+
+#footer .btn {
+    margin-top: 25px;
+    padding: 10px 15px;
+    background-color: aliceblue;
+    color: red;
+    border: 1px solid red;
+    margin-bottom: 25px;
+}
+
+#footer hr {
+    background: var(--color--grey);
+}
+
+#footer .footer-bottom .copyright {
+    text-align: left;
+}
+
+#footer .footer-bottom .copyright p {
+    font-size: 0.8rem;
+}
+
+#footer .footer-bottom .social-media {
+   text-align: right;
+}
+
+
+
+  
