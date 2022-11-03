@@ -36,10 +36,10 @@
 }
 
 @media only screen and (max-width: 767px) {
-    
     p {
       font-size: 0.8rem;
     }
+
     .display-desktop,
     #heroNav{
         display: none;
@@ -80,7 +80,6 @@
         text-align: left;
         margin-bottom: 15px;
     }
- 
 
     #heroNav.active {
         display: block !important;

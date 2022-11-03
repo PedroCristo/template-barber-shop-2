@@ -197,6 +197,13 @@ p {
     vertical-align: middle;
 }
 
+.hero .hero-box .hero-nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+
 .hero .hero-box .hero-nav a{
     color: var(--color-white);
     margin-left: 50px;
