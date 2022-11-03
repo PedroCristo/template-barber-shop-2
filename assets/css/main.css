@@ -20,6 +20,7 @@
     --color--dark-grey: rgb(80, 78, 78);
     --color--grey: rgb(158, 158, 158);
     --color-yellow: rgb(240,173,78);
+    --color-red: rgb(236, 87, 87);
 }
 
 * {
@@ -167,7 +168,7 @@ p {
     transition: 0.5s;
 }
 
-#hero.active {
+.hero.active {
     height: 103vh;
 }
 
@@ -201,7 +202,10 @@ p {
     margin-left: 50px;
     font-size: 1.2rem;
     text-transform: uppercase;
+}
 
+.hero .active-nav {
+    color: var(--color--dark-grey) !important;
 }
 
 .hero .hero-box .hero-nav a:hover {
@@ -220,7 +224,8 @@ p {
 #experience,
 #reviews,
 #work,
-#about {
+#about,
+#services {
     background-color: var(--color-black);
     overflow: hidden;
     color: var(--color-white);
@@ -401,9 +406,10 @@ margin-bottom: 25px;
     margin-top: 25px;
     padding: 10px 15px;
     background-color: aliceblue;
-    color: red;
-    border: 1px solid red;
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
     margin-bottom: 25px;
+    box-shadow: rgb(1 1 1 / 30%) 0px 0px 10px 5px;
 }
 
 #footer hr {
@@ -422,6 +428,89 @@ margin-bottom: 25px;
    text-align: right;
 }
 
+/*******************************
+*                              *
+*        SERVICES PAGE         *
+*                              *
+*******************************/
+.sub-hero {
+    background-image: url("https://www.appointfix.com/blog/wp-content/uploads/2021/12/barber-shop-decor-ideas.jpg");
+    height: 40vh;
+}
 
+.sub-hero .overlay {
+    height: 42vh;
+    opacity: 0.8;
+    transition: 0.5s;
+}
 
+/* SERVICE SECTION */
+#services h2 {
+    width: 380px;
+    margin: 50px auto;
+}
+
+#services h3 {
+    font-size: 1.5rem;
+}
+
+#services p {
+   font-size: 1rem;
+}
+
+#services .under-bar {
+    top:50px
+}
+
+#overlay.active {
+    height: 103vh !important;
+}
+
+#services .services-top {
+    text-align: center;
+    margin: 100px 0;
+}
+
+#services .services-middle {
+    margin: 100px 0;
+}
+
+#services .services-text {
+    margin-bottom: 40px;
+}
+
+#services .services-bottom img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+#services .btn {
+    margin: 100px 0 20px;
+}
+
+#services .services-banner {
+   background-image: url("https://amoryalexandra.com/wp-content/uploads/2019/07/Amory-Alexandra-Mens-Salon-NYC-Grooming-32-In-Office-Haircuts.jpg");
+   height: 40vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 0px -105px;
+   position: relative;
+}
+
+#services .services-banner .overlay {
+    height: 40vh;
+}
+
+#services .container-banner h3 {
+   font-size: 1.2rem;
+}
+
+.hr {
+    background-color: var(--color-white);
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.4;
+}
   
