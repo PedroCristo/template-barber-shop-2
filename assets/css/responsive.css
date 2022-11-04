@@ -124,7 +124,6 @@
 
       #experience h4 {
         font-size: 1rem;
-     
     }
 
     #work .container-xl {
@@ -134,7 +133,6 @@
 
     #work .col-md-4 {
         margin-top: 25px;
-
     }
 
     #about .about-text {
@@ -162,10 +160,21 @@
 
     #services .services-bottom img {
         width: 100%;
-     
     }
 
     .promotions .links-box img{
         width: 90%;
+    }
+
+    .faq .button-box h3{
+        font-size: 1.1rem !important;
+    }
+
+    .faq .button-box{
+        margin-top: -50px;
+    }
+
+    .faq .button-box h3{
+        font-size: 0.8rem !important;
     }
 }

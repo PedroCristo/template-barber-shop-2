@@ -526,7 +526,8 @@ margin-bottom: 25px;
 *      PROMOTIONS PAGE         *
 *                              *
 *******************************/
-.promotions .under-bar {
+.promotions .under-bar,
+.faq .under-bar {
     margin: 10px auto
 }
 
@@ -572,4 +573,19 @@ margin-bottom: 25px;
     margin: 0 auto;
     display: block;
     margin-bottom: 100px;
+}
+
+/*******************************
+*                              *
+*           FAQ PAGE           *
+*                              *
+*******************************/
+
+
+.faq hr{
+    background-color: var(--color--grey);
+}
+
+.faq .button-box h3{
+    font-size: 1.1rem !important;
 }
