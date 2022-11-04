@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap');
 
 
-
 /*******************************
 *                              *
 *        GENERAL STYLES        *
@@ -26,7 +25,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -87,13 +87,17 @@ p {
     background-color: var(--color-green);
     color: var(--color-white);
     padding: 15px 80px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     text-transform: uppercase;
 }
 
 .btn:hover {
     color: var(--color-white);
-    transform: scale(.9);
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
 }
 
 .display-mobile {
@@ -123,6 +127,8 @@ p {
     color: var(--color--grey);
     font-size: 1.8rem;
     margin-right: 15px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -130,7 +136,9 @@ p {
     color: var(--color-black);
     font-size: 1.8rem;
     margin-right: 15px;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .title-box {
@@ -165,20 +173,32 @@ p {
     z-index: 20;
     position: relative;
     display: table;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .hero.active {
-    height: 103vh;
+    height: 120vh;
+}
+
+.sub-hero.active {
+    height: 80vh;
 }
 
 .hero .info-top {
     background-color: var(--color-black);
     width: 100%;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     top: 0;
     z-index: 50;
@@ -198,10 +218,18 @@ p {
 }
 
 .hero .hero-box .hero-nav{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
    margin-top: 20px;
+   z-index: 50;
+   position: relative;
 }
 
 .hero .hero-box .hero-nav a{
@@ -216,7 +244,9 @@ p {
 }
 
 .hero .hero-box .hero-nav a:hover {
-    transform: scale(0.1) !important;
+    -webkit-transform: scale(0.1) !important;
+        -ms-transform: scale(0.1) !important;
+            transform: scale(0.1) !important;
 }
 
 .hero .hero-box .btn{
@@ -416,7 +446,8 @@ margin-bottom: 25px;
     color: var(--color-red);
     border: 1px solid var(--color-red);
     margin-bottom: 25px;
-    box-shadow: rgb(1 1 1 / 30%) 0px 0px 10px 5px;
+    -webkit-box-shadow: rgb(1 1 1 / 30%) 0px 0px 10px 5px;
+            box-shadow: rgb(1 1 1 / 30%) 0px 0px 10px 5px;
 }
 
 #footer hr {
@@ -448,6 +479,8 @@ margin-bottom: 25px;
 .sub-hero .overlay {
     height: 42vh;
     opacity: 0.8;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -542,7 +575,7 @@ margin-bottom: 25px;
     border: 2px solid var(--color-white);
     border-radius: 5px;
     display: table;
-    z-index: 50;
+
     position: relative;
 }
 
@@ -556,7 +589,7 @@ margin-bottom: 25px;
    vertical-align: middle;
    color: var(--color-white);
    font-size: 2rem !important;
-   z-index: 20;
+   z-index: 10;
    position: relative;
 }
 
@@ -580,12 +613,74 @@ margin-bottom: 25px;
 *           FAQ PAGE           *
 *                              *
 *******************************/
-
-
 .faq hr{
     background-color: var(--color--grey);
 }
 
 .faq .button-box h3{
     font-size: 1.1rem !important;
+}
+
+/*******************************
+*                              *
+*         CONTACT PAGE         *
+*                              *
+*******************************/
+.contact img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact .shedule-box h3 {
+   font-size: 1rem !important;
+   width: 300px;
+   margin: 0 auto;
+}
+
+.contact .contact-map {
+    background: var(--color-white);
+    margin:100px 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.contact form {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   background: transparent !important;
+}
+
+.contact form input,
+.contact form textarea {
+   background: transparent !important;
+   margin-bottom: 25px;
+   padding: 15px;
+   outline: none;
+   border: 1px solid var(--color-white);
+   color: var(--color-white);
+}
+
+.contact form button {
+    width: 100px;
+    border-radius: 29px 29px 29px 29px;
+    padding: 7px;
+    color: var(--color-white);
+    background: var(--color--dark-grey);
+    cursor: pointer;
+     border: 0;
+}
+
+.contact .cancelation-box p {
+    width: 70%;
+    margin: 0 auto 25px;
+}
+
+.contact .cancelation-box{
+    margin-bottom: 100px;
 }
