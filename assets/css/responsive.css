@@ -27,6 +27,14 @@
         max-width: 810px;
         margin: 0 auto;
     }
+
+    .promotions .gift-banner {
+       width: 100%;
+    }
+
+    .promotions .links-box img{
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 800px) {
     #work .container-xl {
@@ -72,7 +80,6 @@
     .hero .hero-box .title{
         margin-bottom: 80px;
         font-size: 1.8rem;
-        
     }
     
     .hero .hero-box .hero-nav p{
@@ -156,5 +163,9 @@
     #services .services-bottom img {
         width: 100%;
      
+    }
+
+    .promotions .links-box img{
+        width: 90%;
     }
 }

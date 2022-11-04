@@ -521,3 +521,55 @@ margin-bottom: 25px;
     opacity: 0.4;
 }
   
+/*******************************
+*                              *
+*      PROMOTIONS PAGE         *
+*                              *
+*******************************/
+.promotions .under-bar {
+    margin: 10px auto
+}
+
+.promotions .gift-banner {
+    background-image: url("https://amoryalexandra.com/wp-content/uploads/2020/01/Amory-Alexandra-Mens-Scissor-Haircuts-NYC-Grooming-Gift-Cards.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    display: table;
+    z-index: 50;
+    position: relative;
+}
+
+.promotions .gift-banner .overlay{
+    height: 19.5vh;
+    z-index: 10;
+}
+
+.promotions .gift-banner h3{
+   display: table-cell;
+   vertical-align: middle;
+   color: var(--color-white);
+   font-size: 2rem !important;
+   z-index: 20;
+   position: relative;
+}
+
+.promotions p{
+  color: var(--color-white);
+}
+
+.promotions .links-box h3{
+   font-size: 1.4rem !important;
+}
+
+.promotions .links-box img{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 100px;
+}
